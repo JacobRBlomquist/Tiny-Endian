@@ -52,3 +52,6 @@ The following types are currently supported:
 * Float64
 
 There is also a static function `tinyEndian::Arch_Is_Big_Endian()` which determines the endianness of the current architecture.
+
+Each type is of the same size as its container type (tinyEndian::Int64 is 8 bytes, etc). This will allow
+tinyEndian object to be stored in datastructures without any space overhead.
