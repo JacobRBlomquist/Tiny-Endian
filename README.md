@@ -41,7 +41,7 @@ Your architecture is: Little Endian
 ```
 Hex contents of `out.dat`.
 ```
- 3F F3 C0 C1 FC 8F 32 38`
+ 3F F3 C0 C1 FC 8F 32 38
 ```
 ## Features:
 The following types are currently supported:
