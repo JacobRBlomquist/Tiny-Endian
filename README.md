@@ -17,11 +17,12 @@ int main()
     double bigEndianDouble = float64.Big();
     double littleEndianDouble = float64.Little();
 
-    std::cout << "Value: " << value << "\nBigEndian: " 
-      << bigEndianDouble << "\nLittleEndian: " << littleEndianDouble << std::endl;
+    std::cout << "Value: "        << value              << "\n"
+              << "BigEndian: "    << bigEndianDouble    << "\n"
+              << "LittleEndian: " << littleEndianDouble << std::endl;
 
     std::cout << "Your architecture is: " 
-      << (tinyEndian::Arch_Is_Big_Endian() ? "Big Endian" : "Little Endian");
+              << (tinyEndian::Arch_Is_Big_Endian() ? "Big Endian" : "Little Endian");
 
     std::ofstream out("out.dat", std::ofstream::binary);
 
